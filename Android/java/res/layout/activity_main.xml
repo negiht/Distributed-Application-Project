@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background"
+    tools:context="com.alexronnegi.client.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            tools:text="This will be the server result\n" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_margin="55dp"
+                android:textSize="40dp"
+                android:text="Calculate"
+                android:backgroundTint="@color/customButtonColor" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnUser1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="User1"
+                android:backgroundTint="@color/customButtonColor" />
+
+            <Button
+                android:id="@+id/btnUser2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="User2"
+                android:backgroundTint="@color/customButtonColor" />
+
+            <Button
+                android:id="@+id/btnUser3"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="User3"
+                android:backgroundTint="@color/customButtonColor" />
+
+            <Switch
+                android:id="@+id/switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Off"
+                android:textOn="On" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
